@@ -2,22 +2,26 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Предложение 💍</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="background"></div>
+  <div class="petals-container"></div>
 
-  <div class="box" onclick="openBox()">
-    <div class="lid"></div>
-    <div class="base">
-      <div class="ring"></div>
+  <div class="scene">
+    <div class="box" onclick="openBox()">
+      <div class="lid"></div>
+      <div class="base">
+        <img src="ring.png" alt="Кольцо" class="ring">
+      </div>
     </div>
   </div>
 
-  <div class="text" id="proposalText">Выйдешь за меня? 💍</div>
+  <div class="overlay-text" id="proposalText">Выйдешь за меня?</div>
+  <button class="btn" id="yesBtn" onclick="yesClicked()">Да 💖</button>
 
+  <script src="petals.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
